@@ -1,0 +1,59 @@
+@id = 9223372036854775807
+@baseUrl = https://petstore.swagger.io/v2/pet 
+
+### Save a pet
+
+POST {{baseUrl}} HTTP/1.1
+Content-Type: application/json
+Accept: application/json
+
+{
+  "id": 0,
+  "category": {
+    "id": 0,
+    "name": "fido rex"
+  },
+  "name": "doggie",
+  "photoUrls": [
+  ],
+  "tags": [
+    {
+      "id": 0,
+      "name": "growly"
+    }
+  ],
+  "status": "available"
+}
+
+### Update the pet
+
+PUT {{baseUrl}}  HTTP/1.1
+Content-Type: application/json
+Accept: application/json
+
+{
+  "id": {{id}},
+  "category": {
+    "id": 0,
+    "name": "fido"
+  },
+  "name": "fido rex .snr",
+  "photoUrls": [
+    "string"
+  ],
+  "tags": [
+    {
+      "id": 1,
+      "name": "growly"
+    }
+  ],
+  "status": "available"
+}
+
+### Get the pet 
+
+GET {{baseUrl}}/{{id}} HTTP/1.1
+
+### Get all pets
+
+GET {{baseUrl}}/findByStatus?status=sold
