@@ -9,6 +9,7 @@
 ### Save a new pet
 
 POST {{baseUrl}} HTTP/1.1
+x-header-example: example-value
 Content-Type: application/json
 Accept: application/json
 
