@@ -11,9 +11,7 @@ https://marketplace.visualstudio.com/items?itemName=humao.rest-client
 ```http
 @id = 9223372036854775807
 @baseUrl = https://petstore.swagger.io/v2/pet
-```
 
-```http
 ### Save a new pet
 
 POST {{baseUrl}} HTTP/1.1
