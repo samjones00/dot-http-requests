@@ -1,3 +1,11 @@
+# API development inner-loop testing
+
+Using Visual Studio 17.5 or VS Code with a rest client extension, you can send requests directly from your IDE:
+
+Reference:  
+https://devblogs.microsoft.com/visualstudio/visual-studio-2022-17-5-released/#api  
+https://marketplace.visualstudio.com/items?itemName=humao.rest-client  
+
 # restclient examples
 
 ```http
